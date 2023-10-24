@@ -12,7 +12,8 @@ def ajouterFruit():
             quitter = True
 
 def messageDeSalutation():
-    print("Salutation " + getPrenom.upper())
+    print("Salutation " + getPrenom + " " +getNom.upper())
+    time.sleep(1)
 
 def start():
     time.sleep(3)
@@ -29,10 +30,12 @@ def start():
             case "B":
                 for fruit in fruitPref: 
                     print(fruit)
+                time.sleep(1)
             case "C":
                 quitter = True
 
 getPrenom = input("Quel est ton prenom ? ")
+getNom = input("Quel est ton nom ? ")
 getAge = input("Quel age as tu ? ")
 getTaille = input("Quel est ta taille (en cm) ? ")
 fruitPref = []
